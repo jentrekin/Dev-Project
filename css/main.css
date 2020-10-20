@@ -5,7 +5,7 @@ body {
   color: #2b2b2b;
 }
 
-  #about{
+  #about #top {
   height:400px;
   }
 
@@ -39,16 +39,18 @@ header {
 header h1 {
   font-family:'Lora', serif;
   color: #bbc085;
-  font-size: 35px
+  font-size: 35px;
   padding: 65px 0 65px 25px;
 }
 
 nav {
     float: right;
-    padding: 75px 25px;
+    padding: 75px 75px;
+    overflow: hidden;
 }
 nav ul li{
     display: inline-block;
+    white-space: nowrap;
 }
 nav ul li a {
     text-transform: uppercase;
@@ -56,7 +58,7 @@ nav ul li a {
     font-family:'source sans pro', sans-serif;
     font-size: 18px;
     color: #828282;
-    padding-left: 80px;
+    padding-left: 40px;
 }
 
 header h2 {
@@ -74,22 +76,23 @@ header h2 span {
 
 /***** ABOUT *****/
 
-#about .full-width{
+#about .full-width {
   padding: 30px 0;
+  clear: both;
 }
 
 
 #about h2 {
   font-family: 'Lora', serif;
   font-size: 36px;
-  color: #2b2b2b
+  color: #2b2b2b;
   padding: 50px 0px 10px 0px;
 }
 
-#about p{
+#about p {
   font-family:'Source Sans Pro', sans-serif;
   font-size: 21px;
-  color: #7F7F7F
+  color: #7F7F7F;
   padding: 10px 0px 20px 10px;
   line-height: 30px;
 }
@@ -99,6 +102,7 @@ header h2 span {
 #work {
   background-color: #F9CEB7;
   text-align: center;
+  clear: both;
 }
 
 #work .full-width {
@@ -121,7 +125,7 @@ header h2 span {
 #work p {
   font-family: 'Lora', serif;
   font-size: 18px;
-  color: #2B2B2B
+  color: #2B2B2B;
   line-height: 30px;
   padding: 0 50px;
 }
@@ -152,7 +156,8 @@ header h2 span {
 #contact h2 {
     font-family: 'Lora', serif;
     font-size: 36px;
-    line-height: 44px;
+    line-height: 54px;
+    margin-top: 40px;
 }
 #contact #email-header{
     font-size: 32px;
@@ -165,10 +170,11 @@ header h2 span {
     font-size: 29px;
     line-height: 44px;
     margin: 40px 0 0 0;
+    text-transform: capitalize;
 }
 #contact a {
     text-decoration: none;
-    color: #C49075
+    color: #C49075;
     font-weight: bold;
     font-size: 28PX;
 }
@@ -181,5 +187,32 @@ header h2 span {
 }
 #contact ul img {
     font-size: 32px;
-    padding: 5px 30px 5px 48px;
+    padding-right: 35px;
+}
+
+#directory {
+  height:200px;
+  background-color: white;
+  background-size: cover;
+}
+
+#directory h1{
+  font-family:'Lora', serif;
+  color: #bbc085;
+  font-size: 35px;
+  padding: 50px 0 65px 25px;
+}
+
+#top {
+  float: inherit;
+
+}
+
+#top h2 {
+  font-family: 'Lora', serif;
+  font-size: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #bbc085;
+  padding: 50px 0px 10px 0px;
 }
