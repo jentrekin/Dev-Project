@@ -1,97 +1,117 @@
 /***** BASE STYLES *****/
 
+html {
+  font-size: 16px;
+}
+
 body {
   font-family: 'Source Sans Pro', sans-serif;
   color: #2b2b2b;
+  font-size: 1em;
 }
 
-  #about{
-  height:400px;
-  }
-
-  #work, #contact {
-      height: 600px;
-  }
 
 /***** GRID *****/
 
   .full-width {
-    width: 1200px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 25px 0;
   }
 
-  .half-width {
-    width: 600px;
-    float: left;
-  }
 
-  .third-width {
-    width: 400px;
-    float: left;
-  }
 /***** HEADER *****/
 header {
-  height:800px;
-  background:url('../img/hero.png');
+  background:url('../img/hero.png')no-repeat center #333;
   background-size: cover;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+header .full-width {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 0;
 }
 
 header h1 {
   font-family:'Lora', serif;
   color: #bbc085;
-  font-size: 35px
-  padding: 65px 0 65px 25px;
+  font-size: 3em;
+  padding: 25px 0;
 }
 
-nav {
-    float: right;
-    padding: 75px 25px;
+.header-divider {
+  background: #3a3a3a;
+  width: 70%;
+  height: 1px;
+  margin: 5px 0;
 }
+
+header nav {
+    padding: 25px 0;
+}
+
 nav ul li{
     display: inline-block;
 }
+
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-family:'source sans pro', sans-serif;
-    font-size: 18px;
+    font-size: 1.75em;
     color: #828282;
-    padding-left: 80px;
+    padding-right: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 header h2 {
-    width: 1000px;
-    clear: both;
+    width: 100%;
     font-family: 'Lora', serif;
-    font-size: 68px;
+    font-size: 4.25em;
     line-height: 80px;
     color: #9b9b9b;
-    padding: 20px 0 20px 25px;
+    padding: 20px;
 }
+
 header h2 span {
     color: #2b2b2b;
 }
 
 /***** ABOUT *****/
 
-#about .full-width{
-  padding: 30px 0;
+aside {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    padding: 0 25px;
 }
 
 
-#about h2 {
+aside h3 {
   font-family: 'Lora', serif;
-  font-size: 36px;
-  color: #2b2b2b
-  padding: 50px 0px 10px 0px;
+  font-size: 2.25em;
+  color: #2b2b2b;
+  padding: 50px 0;
+  text-align: center;
 }
 
-#about p{
+aside p{
   font-family:'Source Sans Pro', sans-serif;
-  font-size: 21px;
-  color: #7F7F7F
-  padding: 10px 0px 20px 10px;
+  font-size: 1.375em;
+  color: #7F7F7F;
+  padding: 10px 0;
   line-height: 30px;
+  text-align: justify;
 }
 
 /***** WORK*****/
@@ -99,87 +119,206 @@ header h2 span {
 #work {
   background-color: #F9CEB7;
   text-align: center;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 0;
 }
 
-#work .full-width {
-  padding: 115px 0;
+#work .work-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
-#work img {
-  padding-bottom: 30px;
+#work article {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    margin: 10px 0;
+    width: 75%;
 }
+
 
 #work h3 {
   font-family: 'Source Sans Pro', sans-serif;
-  font-size: 24px;
+  font-size: 1.75em;
   color: black;
   line-height: 32px;
-  width: 190px;
   margin: 0 auto;
 }
 
 #work p {
   font-family: 'Lora', serif;
-  font-size: 18px;
-  color: #2B2B2B
+  font-size: 1em;
+  color: #2B2B2B;
   line-height: 30px;
   padding: 0 50px;
+  text-align: center;
+
 }
 
 
 /****** CONTACT ******/
 
-#contact {
+footer {
   background-color: #EBEBEB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
 }
 
-#contact .full-width {
-  padding: 110px 0;
+footer .full-width {
+  width: 60%;
+  padding: 50px 0;
+
 }
 
-#contact img#contact-img {
-  margin-left: 25px;
+footer figure {
   border: 12px solid #ffffff;
+  width: 90%;
 }
 
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-#contact #envelope {
-    padding: 0 10px 0 115px;
-}
-
-#contact h2 {
+footer h2 {
     font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
+    font-size: 2.25em;
 }
-#contact #email-header{
-    font-size: 32px;
+
+footer #email-header{
+    font-size: 2em;
     font-weight: 400;
     line-height:44px;
-    margin: -30px 0 5px 0;
-}
-#contact #socialmedia-header {
-    font-weight: bold;
-    font-size: 29px;
-    line-height: 44px;
-    margin: 40px 0 0 0;
-}
-#contact a {
-    text-decoration: none;
-    color: #C49075
-    font-weight: bold;
-    font-size: 28PX;
+    padding: 5px 0;
 }
 
-#contact ul {
-    list-style: none;
+footer #socialmedia-header {
+  font-size: 1.75em;
+  line-height: 44px;
+  padding: 5px 0;
 }
-#contact ul li {
-     display: inline-block;
+
+footer .footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
 }
-#contact ul img {
-    font-size: 32px;
-    padding: 5px 30px 5px 48px;
+
+footer article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+footer .social-icons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .social-icons p {
+  padding: 0 20px;
+  width: 40px;
+  height: 40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #C49075;
+    font-weight: bold;
+    font-size: 1.75em;
+}
+
+
+@media only screen and (min-width: 768px) {
+  /*tablets*/
+
+header {
+  justify-content: space-around;
+}
+
+header h1 {
+  width: 30%;
+}
+
+header .full-width {
+  justify-content: space-between;
+}
+
+.header-divider {
+    display: none;
+}
+
+
+footer .full-width {
+    flex-flow: row nowrap;
+    padding: 20px 50px;
+}
+
+
+footer figure {
+  width: 90%;
+}
+
+footer h2,
+footer #email-header,
+footer #contact-info,
+footer #socialmedia-header {
+  padding: 0 20px;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*desktop*/
+
+header {
+  width: 100%;
+  align-items: flex-start;
+  min-height: 600px;
+}
+
+header h1 {
+  width: 100%;
+}
+
+nav ul li a {
+  font-size: 1.15em;
+}
+
+aside {
+    justify-content: space-around;
+    padding: 0 55px;
+}
+
+aside h3 {
+  padding: 0;
+}
+
+
+#work .work-items {
+  flex-flow: row nowrap;
+  align-items: flex-start;
+}
+
+#work article {
+  flex-basis: 33%;
+}
+
+#work h3 {
+  font-size: 1.15em;
+  line-height: 40px;
+}
+
+footer .footer-info {
+  flex-flow: row nowrap;
+}
+
 }
