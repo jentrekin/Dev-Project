@@ -96,12 +96,11 @@ aside {
     padding: 0 25px;
 }
 
-
 aside h3 {
   font-family: 'Lora', serif;
   font-size: 2.25em;
   color: #2b2b2b;
-  padding: 50px 0;
+  padding: 0;
   text-align: center;
 }
 
@@ -109,7 +108,7 @@ aside p{
   font-family:'Source Sans Pro', sans-serif;
   font-size: 1.375em;
   color: #7F7F7F;
-  padding: 10px 0;
+  padding: 10px 50px;
   line-height: 30px;
   text-align: justify;
 }
@@ -180,7 +179,7 @@ footer .full-width {
 
 footer figure {
   border: 12px solid #ffffff;
-  width: 90%;
+  width: auto;
 }
 
 footer h2 {
@@ -217,6 +216,7 @@ footer article {
   text-align: center;
 }
 
+
 footer .social-icons{
   display: flex;
   justify-content: center;
@@ -234,8 +234,14 @@ footer a {
     color: #C49075;
     font-weight: bold;
     font-size: 1.75em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer .email img {
+  padding: 0 10px;
+}
 
 @media only screen and (min-width: 768px) {
   /*tablets*/
@@ -262,10 +268,6 @@ footer .full-width {
     padding: 20px 50px;
 }
 
-
-footer figure {
-  width: 90%;
-}
 
 footer h2,
 footer #email-header,
@@ -294,12 +296,31 @@ nav ul li a {
 }
 
 aside {
+  width: 100%;
     justify-content: space-around;
-    padding: 0 55px;
+    padding: 0;
 }
 
-aside h3 {
+aside .about-info {
+  display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-flow: row nowrap;
+padding: 0 25px;
+}
+
+aside .half-width {
+  display: flex;
+  flex-basis: 50%;
+}
+
+aside .about-info {
   padding: 0;
+}
+
+
+aside p {
+  padding: 10px 20px;
 }
 
 
@@ -319,6 +340,10 @@ aside h3 {
 
 footer .footer-info {
   flex-flow: row nowrap;
+}
+
+footer article {
+  padding: 0 25px;
 }
 
 }
